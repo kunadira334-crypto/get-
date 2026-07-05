@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Guru — RuangMuridMI</title>
+<link rel="icon" href="../assets/logo.svg">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><img class="logo" src="../assets/logo.svg" alt=""><div>RuangMuridMI<small>Panel Guru</small></div></div>
+    <a class="nav-link active"><span class="ic">🏠</span> Dashboard</a>
+    <a class="nav-link"><span class="ic">👥</span> Kelas &amp; Murid</a>
+    <a class="nav-link"><span class="ic">📝</span> Tugas &amp; Soal</a>
+    <a class="nav-link"><span class="ic">📚</span> Materi</a>
+    <a class="nav-link"><span class="ic">📈</span> Nilai</a>
+    <div class="foot"><span class="avatar">S</span><div>Ustadzah Siti<div style="font-weight:600;font-size:11px;color:rgba(255,255,255,.6)">Wali Kelas 3A</div></div></div>
+  </aside>
+  <main class="main">
+    <div class="mainbar">
+      <div><h1>Dashboard</h1><div class="sub">Ringkasan Kelas 3A · Minggu ini</div></div>
+      <div style="display:flex;gap:10px">
+        <button class="btn ghost">+ Tambah Materi</button>
+        <button class="btn primary">+ Buat Tugas</button>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="metrics">
+        <div class="metric"><div class="ic c-blue">👥</div><div class="n">28</div><div class="l">Total murid</div></div>
+        <div class="metric"><div class="ic c-green">✅</div><div class="n">22</div><div class="l">Aktif hari ini</div><div class="trend">▲ 79% kehadiran</div></div>
+        <div class="metric"><div class="ic c-gold">📊</div><div class="n">65%</div><div class="l">Rata-rata progres</div><div class="trend">▲ +8% minggu ini</div></div>
+        <div class="metric"><div class="ic c-red">⚠️</div><div class="n">6</div><div class="l">Belum kerjakan tugas</div></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <div class="ph"><h3>Progres Murid</h3><a style="font-size:13px;font-weight:700;color:var(--green)">Lihat semua</a></div>
+          <div class="pb">
+            <table>
+              <thead><tr><th>Nama</th><th>Progres</th><th>Poin</th><th>Terakhir aktif</th></tr></thead>
+              <tbody>
+                <tr><td><div class="who"><span class="avatar">A</span> Ahmad Fauzi</div></td><td><span class="mini-bar"><i style="width:40%"></i></span> 40%</td><td>120</td><td>Hari ini</td></tr>
+                <tr><td><div class="who"><span class="avatar" style="background:var(--purple)">F</span> Fatimah Azzahra</div></td><td><span class="mini-bar"><i style="width:80%"></i></span> 80%</td><td>260</td><td>Hari ini</td></tr>
+                <tr><td><div class="who"><span class="avatar" style="background:var(--gold)">Y</span> Yusuf Hakim</div></td><td><span class="mini-bar"><i style="width:25%"></i></span> 25%</td><td>60</td><td><span class="tag late">3 hari lalu</span></td></tr>
+                <tr><td><div class="who"><span class="avatar" style="background:var(--blue)">N</span> Nabila Putri</div></td><td><span class="mini-bar"><i style="width:62%"></i></span> 62%</td><td>180</td><td>Kemarin</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div class="panel">
+            <div class="ph"><h3>Perlu Perhatian</h3></div>
+            <div style="padding:16px 20px;display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;gap:12px;align-items:flex-start"><span style="font-size:18px">⚠️</span><div style="font-size:13px"><b>6 murid</b> belum mengerjakan <b>Latihan SKI</b>.<div style="margin-top:8px"><button class="btn ghost" style="padding:8px 12px;font-size:12px">Kirim pengingat</button></div></div></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Tugas Terbaru</h3></div>
+            <div style="padding:8px">
+              <div class="row" style="border:none"><span class="ic c-blue">🔢</span><span class="grow"><span class="t">Latihan Pecahan</span><span class="s">22/28 selesai</span></span><span class="tag ok">Aktif</span></div>
+              <div class="row" style="border:none"><span class="ic c-purple">📜</span><span class="grow"><span class="t">Kisah Nabi (SKI)</span><span class="s">14/28 selesai</span></span><span class="tag warn">Tenggat besok</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
